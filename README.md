@@ -16,6 +16,10 @@ docker-compose up -d
 
 ![рисунок 1](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_1.jpg)
 ![рисунок 2](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_2.jpg)
+![рисунок 3](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_3.jpg)
+![рисунок 4](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_4.jpg)
+![рисунок 5](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_5.jpg)
+![рисунок 6](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_6.jpg)
 
 ## Задание 1
 
