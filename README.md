@@ -1,6 +1,21 @@
 # Домашнее задание к занятию 15 «Система сбора логов Elastic Stack»  Мельник Юрий Алексндрович
 
+## Подготовка 
+На хосте (Linux):
+```
+sudo sysctl -w vm.max_map_count=262144
+```
 
+
+Из директории help 
+```
+docker-compose up -d
+```
+
+После старта (даём контейнерам 1–2 минуты на прогрев):
+
+![рисунок 1](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_1.jpg)
+![рисунок 2](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_2.jpg)
 
 ## Задание 1
 
