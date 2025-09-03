@@ -16,10 +16,7 @@ docker-compose up -d
 
 ![рисунок 1](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_1.jpg)
 ![рисунок 2](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_2.jpg)
-![рисунок 3](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_3.jpg)
-![рисунок 4](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_4.jpg)
-![рисунок 5](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_5.jpg)
-![рисунок 6](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_6.jpg)
+
 
 ## Задание 1
 
@@ -43,6 +40,15 @@ Filebeat следует сконфигурировать для отправки
 - скриншот интерфейса kibana;
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
+
+
+## Решение  1
+
+![рисунок 3](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_3.jpg)
+![рисунок 4](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_4.jpg)
+![рисунок 5](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_5.jpg)
+![рисунок 6](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_6.jpg)
+![рисунок 7](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_7.jpg)
 
 ## Задание 2
 
