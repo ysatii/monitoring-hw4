@@ -45,9 +45,7 @@ Filebeat следует сконфигурировать для отправки
 ## Решение  1
 
 ![рисунок 3](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_3.jpg)
-![рисунок 4](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_4.jpg)
-![рисунок 5](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_5.jpg)
-![рисунок 6](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_6.jpg)
+
 ![рисунок 7](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_7.jpg)
 
 ## Задание 2
@@ -60,6 +58,26 @@ Filebeat следует сконфигурировать для отправки
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
  
 ---
+## Решение  2
+![рисунок 4](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_4.jpg)
+![рисунок 5](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_5.jpg)
+![рисунок 6](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_6.jpg)
+![рисунок 7](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_7.jpg)
+![рисунок 8](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_8.jpg)
+![рисунок 9](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_9.jpg)
+![рисунок 10](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_10.jpg)
+![рисунок 11](https://github.com/ysatii/monitoring-hw4/blob/main/img/img_11.jpg)
+
+## Список контейнеров
+
+| Имя службы | Порты (host:container) | Назначение |
+|------------|------------------------|------------|
+| **es-hot** | 9200 → 9200, 9300 → 9300 | Основная нода Elasticsearch (hot), хранит и обрабатывает «горячие» данные, принимает запросы REST. |
+| **es-warm** | (нет проброса наружу, только во внутренней сети) | Вторая нода Elasticsearch (warm), хранит «тёплые» данные, участвует в кластере. |
+| **kibana** | 5601 → 5601 | Веб-интерфейс для работы с Elasticsearch: настройка Data Views, визуализации, Discover, Dashboard. |
+| **logstash** | 5044 → 5044, 5046 → 5046, 9600 → 9600 | Принимает логи от Filebeat (Beats input), обрабатывает фильтрами (json/grok), пишет в Elasticsearch. |
+| **filebeat** | (порты не проброшены) | Агент, который читает Docker-логи контейнеров на хосте и отправляет их в Logstash. |
+| **some_app** | (порты не проброшены) | Тестовое приложение-«логогенератор» (Python), каждую секунду пишет INFO/WARN/ERROR в stdout, чтобы были данные для Filebeat. |
 
 ## Дополнительные ссылки
 
